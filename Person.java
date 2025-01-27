@@ -21,11 +21,11 @@ public class Person
      */
     public Person()
     {
-        height = 60;
-        width = 30;
+        height = 30;
+        width = 15;
         xPosition = 280;
         yPosition = 190;
-        color = "black";
+        color = "white";
         isVisible = false;
     }
 
