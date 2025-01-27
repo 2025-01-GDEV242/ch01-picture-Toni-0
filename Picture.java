@@ -21,6 +21,7 @@ public class Picture
     private Square body2;
     private Triangle thrust;
     private Triangle top;
+    private Circle star;
     private boolean drawn;
 
     /**
@@ -37,6 +38,7 @@ public class Picture
         body2 = new Square();
         thrust = new Triangle();
         top = new Triangle();
+        star = new Circle();
         drawn = false;
     }
 
@@ -100,6 +102,12 @@ public class Picture
             thrust.moveVertical(90);
             thrust.changeSize(10,70);
             thrust.makeVisible();
+            
+            star.changeColor("white");
+            star.moveHorizontal(-70);
+            star.moveVertical(120);
+            star.changeSize(10);
+            star.makeVisible();
             drawn = true;
         }
     }
