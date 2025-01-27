@@ -26,6 +26,7 @@ public class Picture
         window = new Square();
         roof = new Triangle();  
         sun = new Circle();
+        
         drawn = false;
     }
 
