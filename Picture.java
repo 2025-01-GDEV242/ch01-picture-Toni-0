@@ -11,10 +11,10 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+
+    private Circle planet1;
+    private Circle planet2;
+    private Circle planet3;
     private boolean drawn;
 
     /**
@@ -22,11 +22,9 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
-        
+        planet1 = new Circle();
+        planet2 = new Circle();
+        planet3 = new Circle();
         drawn = false;
     }
 
@@ -36,27 +34,25 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
-    
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            planet1.changeColor("yellow");
+            planet1.moveHorizontal(150);
+            planet1.moveVertical(75);
+            planet1.changeSize(400);
+            planet1.makeVisible();
+            
+            planet2.changeColor("magenta");
+            planet2.moveHorizontal(-400);
+            planet2.moveVertical(60);
+            planet2.changeSize(350);
+            planet2.makeVisible();
+            
+            planet3.changeColor("red");
+            planet3.moveHorizontal(20);
+            planet3.moveVertical(-40);
+            planet3.changeSize(50);
+            planet3.makeVisible();
             drawn = true;
         }
     }
@@ -66,10 +62,11 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        
+        planet1.changeColor("black");
+        planet2.changeColor("black");
+        planet3.changeColor("black");
+
     }
 
     /**
@@ -77,9 +74,9 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+     
+        planet1.changeColor("yellow");
+        planet2.changeColor("yellow");
+        planet3.changeColor("red");
     }
 }
