@@ -16,12 +16,14 @@ public class Picture
     private Circle planet2;
     private Circle planet3;
     private Circle planet4;
+    private Circle planet5;
     private Person astro;
     private Square body1;
     private Square body2;
     private Triangle thrust;
     private Triangle top;
     private Circle star;
+    private Circle celina;
     private boolean drawn;
 
     /**
@@ -39,6 +41,9 @@ public class Picture
         thrust = new Triangle();
         top = new Triangle();
         star = new Circle();
+        celina = new Circle();
+        planet5 = new Circle();
+        
         drawn = false;
     }
 
@@ -74,6 +79,12 @@ public class Picture
             planet4.changeSize(30);
             planet4.makeVisible();
             
+            planet5.changeColor("yellow");
+            planet5.moveHorizontal(10);
+            planet5.moveVertical(-10);
+            planet5.changeSize(10);
+            planet5.makeVisible();
+            
             astro.changeColor("white");
             astro.moveHorizontal(50);
             astro.moveVertical(50);
@@ -108,6 +119,13 @@ public class Picture
             star.moveVertical(120);
             star.changeSize(10);
             star.makeVisible();
+            
+            celina.changeColor("white");
+            celina.moveHorizontal(-80);
+            celina.moveVertical(-40);
+            celina.changeSize(5);
+            celina.makeVisible();
+            
             drawn = true;
         }
     }
