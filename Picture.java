@@ -136,10 +136,19 @@ public class Picture
     public void setBlackAndWhite()
     {
         
-        planet1.changeColor("black");
-        planet2.changeColor("black");
-        planet3.changeColor("black");
-
+        planet1.changeColor("white");
+        planet2.changeColor("white");
+        planet3.changeColor("white");
+        planet4.changeColor("white");
+        planet5.changeColor("white");
+        astro.changeColor("white");
+        body1.changeColor("white");
+        body2.changeColor("white");
+        top.changeColor("white");
+        thrust.changeColor("white");
+        star.changeColor("white");
+        celina.changeColor("white");
+        
     }
 
     /**
@@ -149,7 +158,17 @@ public class Picture
     {
      
         planet1.changeColor("yellow");
-        planet2.changeColor("yellow");
+        planet2.changeColor("magenta");
         planet3.changeColor("red");
+        planet4.changeColor("blue");
+        planet5.changeColor("yellow");
+        astro.changeColor("white");
+        body1.changeColor("white");
+        body2.changeColor("white");
+        top.changeColor("white");
+        thrust.changeColor("white");
+        star.changeColor("white");
+        celina.changeColor("white");
+        
     }
 }
